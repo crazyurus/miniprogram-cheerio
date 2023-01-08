@@ -1,8 +1,7 @@
 {
-  "plugins": ["jsdoc"],
+  "plugins": [],
   "extends": [
     "eslint:recommended",
-    "plugin:jsdoc/recommended",
     "plugin:n/recommended",
     "plugin:unicorn/recommended",
     "prettier"
@@ -46,18 +45,6 @@
     "no-constant-binary-expression": 2,
     "no-void": 2,
 
-    "jsdoc/require-jsdoc": 0,
-    "jsdoc/check-tag-names": 2,
-    "jsdoc/newline-after-description": 2,
-    "jsdoc/require-description-complete-sentence": 2,
-    "jsdoc/require-hyphen-before-param-description": 2,
-    "jsdoc/require-param-description": 2,
-    "jsdoc/require-param-name": 2,
-    "jsdoc/require-param-type": 0,
-    "jsdoc/require-returns-type": 0,
-    "jsdoc/no-types": 2,
-    "jsdoc/valid-types": 2,
-
     "n/file-extension-in-import": ["error", "always"],
     "n/no-missing-import": 0,
 
@@ -77,12 +64,6 @@
     ]
   },
   "settings": {
-    "jsdoc": {
-      "mode": "typescript",
-      "tagNamePreference": {
-        "category": "category"
-      }
-    }
   },
   "overrides": [
     {
@@ -102,8 +83,6 @@
         "dot-notation": 0,
         "curly": [2, "multi-line"],
         "n/no-unsupported-features/es-syntax": 0,
-
-        "jsdoc/require-returns-check": 0, // Broken with overloaded fns
 
         "@typescript-eslint/prefer-for-of": 0,
         "@typescript-eslint/member-ordering": 0,
@@ -128,7 +107,6 @@
     },
     {
       "files": "*.spec.ts",
-      "extends": "plugin:jest/recommended",
       "rules": {
         "@typescript-eslint/no-explicit-any": 0
       }
