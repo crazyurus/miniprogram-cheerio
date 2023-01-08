@@ -1,7 +1,5 @@
 import type { DomHandlerOptions } from 'domhandler';
 import type { ParserOptions as HTMLParser2ParserOptions } from 'htmlparser2';
-import type { ParserOptions as Parse5ParserOptions } from 'parse5';
-import type { Htmlparser2TreeAdapterMap } from 'parse5-htmlparser2-tree-adapter';
 import type { Options as SelectOptions } from 'cheerio-select';
 
 /**
@@ -13,16 +11,13 @@ export interface HTMLParser2Options
   extends DomHandlerOptions,
     HTMLParser2ParserOptions {}
 
-/** Options for parse5, the default parser for HTML. */
-export type Parse5Options = Parse5ParserOptions<Htmlparser2TreeAdapterMap>;
-
 /**
  * Options accepted by Cheerio.
  *
  * Please note that parser-specific options are _only recognized_ if the
  * relevant parser is used.
  */
-export interface CheerioOptions extends Parse5Options {
+export interface CheerioOptions {
   /**
    * Recommended way of configuring htmlparser2 when wanting to parse XML.
    *
