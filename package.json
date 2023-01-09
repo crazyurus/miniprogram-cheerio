@@ -21,7 +21,6 @@
     "dist"
   ],
   "devDependencies": {
-    "@imgix/js-core": "^3.7.1",
     "@types/node": "^18.11.18",
     "@types/whatwg-mimetype": "^3.0.0",
     "@typescript-eslint/eslint-plugin": "^5.48.0",
@@ -45,5 +44,6 @@
     "singleQuote": true,
     "tabWidth": 2,
     "tsdoc": true
-  }
+  },
+  "packageManager": "pnpm@7.22.0"
 }

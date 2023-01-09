@@ -1,6 +1,6 @@
 # cheerio for MiniProgram
 
-![发布](https://github.com/crazyurus/miniprogram-cheerio/actions/workflows/publish.yaml/badge.svg)
+![publish](https://github.com/crazyurus/miniprogram-cheerio/actions/workflows/publish.yaml/badge.svg)
 [![MIT License](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
 [![npm](https://badgen.net/npm/v/miniprogram-cheerio)](https://www.npmjs.com/package/miniprogram-cheerio)
 [![npm dependents](https://badgen.net/npm/dependents/miniprogram-cheerio)](https://www.npmjs.com/package/miniprogram-cheerio?activeTab=dependents)
@@ -34,4 +34,4 @@ And for more usage see [https://cheerio.js.org/](https://cheerio.js.org/).
 
 ## License
 
-MIT
+[MIT](./LICENSE)
